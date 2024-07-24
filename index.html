@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/>
+
+  <title>PHP badwords</title>
+</head>
+<body>
+
+  <div class="container my-5">
+    <form action="./pagina-di-atterraggio.php" method="POST">
+
+      <div class="mb-3">
+        <label for="badword" class="form-label">Badword</label>
+        <input
+          id="badword"
+          class="form-control"
+          placeholder="Badword"
+          type="text"
+          name="badword"
+        >
+      </div>
+      <div class="mb-3">
+        <label for="paragrafo" class="form-label">Paragrafo</label>
+        <textarea
+          id="paragrafo"
+          class="form-control"
+          name="paragrafo"
+          placeholder="Paragrafo"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Invia</button>
+      
+    </form>
+  </div>
+  
+</body>
+</html>
